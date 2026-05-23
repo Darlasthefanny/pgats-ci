@@ -37,8 +37,8 @@ jobs:
         run: yarn
 
         # instalação dos browser do Playwrigth
-      - name: Inatalando Browsers do Playwright
-        run: yarn playwrigth install
+      - name: Instalando Browsers do Playwright
+        run: yarn playwright install
 
         # executar testes e2e
       - name: Executando testes e2e
