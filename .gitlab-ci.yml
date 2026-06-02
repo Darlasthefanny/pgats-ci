@@ -3,11 +3,9 @@ stages:
 
 e2e-test:
   stage: test
-
-  image: node:24
+  image: mcr.microsoft.com/playwright:v1.47.2-jammy
 
   script:
     - npm install -g yarn
-    - yarn
-    - yarn playwright install
+    - yarn install
     - yarn run e2e
